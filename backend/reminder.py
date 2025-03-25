@@ -17,8 +17,8 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///reminders.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 # Email configuration
-#app.config['MAIL_SENDER'] = "cse230001050@iiti.ac.in"  # Your email
-#app.config['MAIL_PASSWORD'] = "nqiesvbbvkxqytjm"  # Your app password
+app.config['MAIL_SENDER'] = ""  # Your email
+app.config['MAIL_PASSWORD'] = ""  # Your app password
 
 # Initialize database
 db = SQLAlchemy(app)
