@@ -8,8 +8,9 @@ import Navbar from '../components/Navbar'
 const MainLayout = () => {
   return (
     <>  
-        <div style={pageContainerStyle}>
-          <div  style={contentStyle}>
+        <div>
+          <Navbar/>
+          <div>
             <Outlet />
             <ToastContainer />
           </div>
@@ -18,14 +19,5 @@ const MainLayout = () => {
   );
 };
 
-const pageContainerStyle = {
-  display: "flex",
-  flexDirection: "column",
-  minHeight: "93.75vh", // Full viewport height
-};
-
-const contentStyle = {
-  flex: "1", // Takes remaining space, pushing the footer to the bottom
-};
 
 export default MainLayout
